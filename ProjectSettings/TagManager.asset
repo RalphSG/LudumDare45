@@ -5,6 +5,26 @@ TagManager:
   serializedVersion: 2
   tags:
   - FloatingPerimeter
+  - Canteen
+  - Bottle
+  - Seaweed
+  - Food
+  - Fish
+  - Shark
+  - Stick
+  - Plank
+  - Cloth
+  - Rope
+  - Tarpaulin
+  - Scrap
+  - Hull
+  - Wheel
+  - Compass
+  - Coconut
+  - Telescope
+  - Parrot
+  - Message
+  - NearPerimeter
   layers:
   - Default
   - TransparentFX

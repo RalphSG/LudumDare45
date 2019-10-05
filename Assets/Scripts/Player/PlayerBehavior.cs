@@ -30,36 +30,40 @@ public class PlayerBehavior : MonoBehaviour {
 		if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D))
 		{
 			transform.rotation = Quaternion.AngleAxis(315, Vector3.forward);
+			playerAnim.SetBool("isSwimming", true);
 		}
 		else if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A))
 		{
 			transform.rotation = Quaternion.AngleAxis(45, Vector3.forward);
+			playerAnim.SetBool("isSwimming", true);
 		}
 		else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A))
 		{
 			transform.rotation = Quaternion.AngleAxis(135, Vector3.forward);
+			playerAnim.SetBool("isSwimming", true);
 		}
 		else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D))
 		{
 			transform.rotation = Quaternion.AngleAxis(225, Vector3.forward);
+			playerAnim.SetBool("isSwimming", true);
 		}
 		else if (Input.GetKey(KeyCode.W))
 		{
 			transform.rotation = Quaternion.AngleAxis(0, Vector3.forward);
+			playerAnim.SetBool("isSwimming", true);
 		}
 		else if (Input.GetKey(KeyCode.A))
 		{
 			transform.rotation = Quaternion.AngleAxis(90, Vector3.forward);
+			playerAnim.SetBool("isSwimming", true);
 		}
 		else if (Input.GetKey(KeyCode.S))
 		{
 			transform.rotation = Quaternion.AngleAxis(180, Vector3.forward);
+			playerAnim.SetBool("isSwimming", true);
 		}
 		else if (Input.GetKey(KeyCode.D)){
 			transform.rotation = Quaternion.AngleAxis(270, Vector3.forward);
-		}
-
-		if (Input.GetKey(KeyCode.Space)){
 			playerAnim.SetBool("isSwimming", true);
 		}
 		else {
