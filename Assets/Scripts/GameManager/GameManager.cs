@@ -6,4 +6,6 @@ public class GameManager : MonoBehaviour
 {
 	public bool firstOpenInfoScreen = true;
 
+	public float speed = 5f;
+
 }
