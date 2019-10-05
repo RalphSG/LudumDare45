@@ -73,10 +73,12 @@ Crafted items:
 			Destroyed after 6-10 minutes)
 		End game: Pirate Ship (requires fully upgraded Survival raft + 2 pieces of hull, 1 ship's wheel) >> destroys sharks on contact, increased spped. 
 
-Collectibles: (Not essential) 
-	Telescope (increased field of view)
+Collectibles: 
+	Compass
+	Coconut / Piece of tree (becomes more frequent the closer you get to land)
+	(Telescope (increased field of view)
 	Parrot (warning of shark approaching)
-	Message in a bottle (gives a gameplay tip)
+	Message in a bottle (gives a gameplay tip))
 		
 Item behaviour:
 	Items are generated using spawners. They get spawned depending on how much one as swim in a certain direction (randomized). They stay for a limited amount of time and distance. If the player is going in circles items will eventually spawn in every directions however they will depop after a certain time; if the player swims straight in one direction items will spawn in less directions and will only float as long as the player is near them (out of sight though).
