@@ -1,13 +1,18 @@
+Inventory slots: 
+	Tier I (without raft): 4 slots
+	Tier II (with raft): 8 slots
+Items do not stack, so each 1 item takes up 1 inventory slot. So, 4 Planks of Wood will take up 4 inventory slots. 
+
 Consumables:
 	Tier I:
-		Seaweed
-		Can of food
-		Bottle of water
+		Seaweed (+ food)
+		Can of food (++ food)
+		Bottle of water (++ water)
+		Empty bottle
 	Tier II: 
-		Fish (requires net)
-		Shark (requires spear)
-		Packed lunch (requires drying rack)
-	
+		Fish (requires net) (++ food)
+		Shark (requires spear) (+++ food)
+
 Building resources:
 	Tier I (can be collected from the start):
 		Wooden plank
@@ -17,33 +22,63 @@ Building resources:
 	Tier II (a survival raft to collect):
 		Tarpaulin
 		Metal scrap
-		Plastic container
+	Tier III (rare items)
+		Piece of hull
+		Ship's wheel
 	
 Crafted items:
 	Clothing:
-		Poncho (requires 2 cloth)
-		Hat (requires 1 cloth)
-	
+		Seaweed wig 
+			3 seaweed
+			-exposure
+		Poncho 
+			2 cloth
+			-- exposure
+		Hat
+			1 cloth
+			-- exposure
+		Waterproof poncho
+			1 tarpaulin, 1 rope
+			--- exposure
+		Waterproof hat
+			1 tarpaulin, 
+			--- exposure
+		
+	Survival Resources:
+		Water filter (can fill up empty bottle with sea water) 
+			1 cloth (Destroys resource)
+		Campfire (used to cook fish and shark, reduces exposure) 
+			2 sticks (Destroys resource, cooks 1 item)
+		
 	Weapons / Food gathering tools: 
-		Spear (requires 1 wooden stick, 1 metal scrap)
-		Net (requires 2 rope)
+		Spear >> used to kill shark 
+			1 wooden stick, 1 metal scrap)
+			Destroyed after 30 strokes
+		Net >> used to catch fish
+			2 rope
+			Destroyed after 5 minutes of in-game use
 
-	Rafts:
+	Raft:
 		Survival raft (4 plank) >> 2% speed boost
 	***Everything below requires Survival Raft***
-		Small paddle (1 plank) + 5% speed, -- food, -- water, ++ temperature
-		Small sail (1 tarpaulin, 1 rope)
-		Rudder (Small sail, 1 plank, 2 stick)
-		Big paddle (Small paddle + 1 plank, 1 stick) + 15% speed, ---food, ---water, +++ temperatue
-		Big sail (Small sail, rudder, 2 tarpaulin, 3 rope)
+		Small paddle (1 plank) + 5% speed, -- food, -- water, ++ temperature (while equipped)
+			Destroyed after 50 strokes)
+		Small sail (1 tarpaulin, 1 rope) + 5% speed (passive effect)
+			Destroyed after 3 minutes in game use)
+		Rudder (Small sail, 1 plank, 2 stick) increased manoeveurability 
+			Destroyed after 20 minutes use)
+		Big paddle (Small paddle + 1 plank, 1 stick) + 20% speed, ---food, ---water, +++ temperatue (while equipped)
+			Destroyed after 100 strokes
+		Big sail (Small sail, rudder, 2 tarpaulin, 3 rope) + 10% speed (passive effect)
+			Destroyed after 6-10 minutes)
+		End game: Pirate Ship (requires fully upgraded Survival raft + 2 pieces of hull, 1 ship's wheel) >> destroys sharks on contact, increased spped. 
 
-Collectibles: (Not essential)
-	Telescope
-	Parrot
-	Gold dubloon
-	Message in a bottle
+Collectibles: (Not essential) 
+	Telescope (increased field of view)
+	Parrot (warning of shark approaching)
+	Message in a bottle (gives a gameplay tip)
 		
-Item behavior:
+Item behaviour:
 	Items are generated using spawners. They get spawned depending on how much one as swim in a certain direction (randomized). They stay for a limited amount of time and distance. If the player is going in circles items will eventually spawn in every directions however they will depop after a certain time; if the player swims straight in one direction items will spawn in less directions and will only float as long as the player is near them (out of sight though).
 
 	
