@@ -4,12 +4,12 @@ Inventory slots:
 Items do not stack, so each 1 item takes up 1 inventory slot. So, 4 Planks of Wood will take up 4 inventory slots. 
 
 Consumables:
-	Tier I:
+	Tier I (from start)
 		Seaweed (+ food)
 		Can of food (++ food)
 		Bottle of water (++ water)
 		Empty bottle
-	Tier II: 
+	Tier II (requires raft + necessary tools)
 		Fish (requires net) (++ food)
 		Shark (requires spear) (+++ food)
 
@@ -22,7 +22,7 @@ Building resources:
 	Tier II (a survival raft to collect):
 		Tarpaulin
 		Metal scrap
-	Tier III (rare items)
+	Tier III (rare items, used to upgrade raft)
 		Piece of hull
 		Ship's wheel
 	
