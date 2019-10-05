@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour {
 
+	//array holding the floating items
 	public GameObject[] item;
+
+	//timer between the item spawn
 	private float timeBtwSpawn;
 
 	private void Start()

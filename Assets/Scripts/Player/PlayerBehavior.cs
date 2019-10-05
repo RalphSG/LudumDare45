@@ -13,6 +13,8 @@ public class PlayerBehavior : MonoBehaviour {
 	public float thirst = 0f;
 	public float temperature = 0f;
 
+	public Sprite[] characterSprite;
+
 	//Variable for Animator
 	private Animator playerAnim;
 
@@ -20,54 +22,51 @@ public class PlayerBehavior : MonoBehaviour {
 	private GameManager manager;
 
 	// Use this for initialization
-	void Start () {
+	void Start()
+	{
 		playerAnim = GetComponent<Animator>();
 		manager = GameObject.FindObjectOfType<GameManager>();
+		manager.speed = maxSpeed;
 	}
-	
+
 	// Update is called once per frame
-	void Update () {
+	void Update()
+	{
 		if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D))
 		{
-			transform.rotation = Quaternion.AngleAxis(315, Vector3.forward);
-			playerAnim.SetBool("isSwimming", true);
+			this.GetComponent<SpriteRenderer>().sprite = characterSprite[0];
+			//playerAnim.SetBool("isSwimming", true);
 		}
 		else if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A))
 		{
-			transform.rotation = Quaternion.AngleAxis(45, Vector3.forward);
-			playerAnim.SetBool("isSwimming", true);
+			this.GetComponent<SpriteRenderer>().sprite = characterSprite[0];
 		}
 		else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A))
 		{
-			transform.rotation = Quaternion.AngleAxis(135, Vector3.forward);
-			playerAnim.SetBool("isSwimming", true);
+			this.GetComponent<SpriteRenderer>().sprite = characterSprite[1];
 		}
 		else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D))
 		{
-			transform.rotation = Quaternion.AngleAxis(225, Vector3.forward);
-			playerAnim.SetBool("isSwimming", true);
+			this.GetComponent<SpriteRenderer>().sprite = characterSprite[1];
 		}
 		else if (Input.GetKey(KeyCode.W))
 		{
-			transform.rotation = Quaternion.AngleAxis(0, Vector3.forward);
-			playerAnim.SetBool("isSwimming", true);
+			this.GetComponent<SpriteRenderer>().sprite = characterSprite[0];
 		}
 		else if (Input.GetKey(KeyCode.A))
 		{
-			transform.rotation = Quaternion.AngleAxis(90, Vector3.forward);
-			playerAnim.SetBool("isSwimming", true);
+			this.GetComponent<SpriteRenderer>().sprite = characterSprite[2];
 		}
 		else if (Input.GetKey(KeyCode.S))
 		{
-			transform.rotation = Quaternion.AngleAxis(180, Vector3.forward);
-			playerAnim.SetBool("isSwimming", true);
+			this.GetComponent<SpriteRenderer>().sprite = characterSprite[1];
 		}
-		else if (Input.GetKey(KeyCode.D)){
-			transform.rotation = Quaternion.AngleAxis(270, Vector3.forward);
-			playerAnim.SetBool("isSwimming", true);
+		else if (Input.GetKey(KeyCode.D))
+		{
+			this.GetComponent<SpriteRenderer>().sprite = characterSprite[3];
 		}
 		else {
-			playerAnim.SetBool("isSwimming", false);
+			//playerAnim.SetBool("isSwimming", false);
 		}
 	}
 }
