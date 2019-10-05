@@ -1,26 +1,49 @@
-Collectibles:
 Consumables:
-	water bottle
-	can of food
-	fish
+	Tier I:
+		Seaweed
+		Can of food
+		Bottle of water
+	Tier II: 
+		Fish (requires net)
+		Shark (requires spear)
+		Packed lunch (requires drying rack)
+	
+Building resources:
+	Tier I (can be collected from the start):
+		Wooden plank
+		Wooden stick
+		Cloth
+		Rope
+	Tier II (a survival raft to collect):
+		Tarpaulin
+		Metal scrap
+		Plastic container
+	
+Crafted items:
+	Clothing:
+		Poncho (requires 2 cloth)
+		Hat (requires 1 cloth)
+	
+	Weapons / Food gathering tools: 
+		Spear (requires 1 wooden stick, 1 metal scrap)
+		Net (requires 2 rope)
 
-	
-Building ressources:
-	wooden log
-	wooden stick
-	piece of cloth
-	ropes
-	plastic containers
-	fishing net
-	
-	
-Wearables:
-	hat
-	gloves
-	jeans/trousers
-	jacket
-	shirt
+	Rafts:
+		Survival raft (4 plank) >> 2% speed boost
+	***Everything below requires Survival Raft***
+		Small paddle (1 plank) + 5% speed, -- food, -- water, ++ temperature
+		Small sail (1 tarpaulin, 1 rope)
+		Rudder (Small sail, 1 plank, 2 stick)
+		Big paddle (Small paddle + 1 plank, 1 stick) + 15% speed, ---food, ---water, +++ temperatue
+		Big sail (Small sail, rudder, 2 tarpaulin, 3 rope)
 
+Collectibles: (Not essential)
+	Telescope
+	Parrot
+	Gold dubloon
+	Message in a bottle
+		
 Item behavior:
 	Items are generated using spawners. They get spawned depending on how much one as swim in a certain direction (randomized). They stay for a limited amount of time and distance. If the player is going in circles items will eventually spawn in every directions however they will depop after a certain time; if the player swims straight in one direction items will spawn in less directions and will only float as long as the player is near them (out of sight though).
+
 	
