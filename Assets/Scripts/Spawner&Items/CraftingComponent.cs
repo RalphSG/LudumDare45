@@ -17,7 +17,21 @@ public class CraftingComponent : MonoBehaviour {
 	public void ChangingSlots()
 	{
 		
-		if (transform.parent.tag == "Slot")
+		if (transform.parent.tag == "CraftingSlot")
+		{
+			for (int i = 0; i < inventory.slots.Length; i++)
+			{
+				if (inventory.isFull[i] == false)
+				{
+					//item can be added to inventory!
+					inventory.isFull[i] = true;
+					Instantiate(gameObject, inventory.slots[i].transform, false);
+					Destroy(gameObject);
+					break;
+				}
+			} 
+		}
+		else if (transform.parent.tag == "Slot")
 		{
 			craftingPanel = craftingButton.craftingPanel;
 			if (craftingPanel == true)
@@ -34,20 +48,6 @@ public class CraftingComponent : MonoBehaviour {
 					}
 				}
 			}
-		}
-		else if (transform.parent.tag == "CraftingSlot")
-		{
-				for (int i = 0; i < inventory.slots.Length; i++)
-				{
-					if (inventory.isFull[i] == false)
-					{
-						//item can be added to inventory!
-						inventory.isFull[i] = true;
-						Instantiate(gameObject, inventory.slots[i].transform, false);
-						Destroy(gameObject);
-						break;
-					}
-				}
 			}
 	}
 }
