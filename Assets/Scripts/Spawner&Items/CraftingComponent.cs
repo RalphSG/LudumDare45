@@ -19,9 +19,9 @@ public class CraftingComponent : MonoBehaviour {
 		
 		if (transform.parent.tag == "Slot")
 		{
+			craftingPanel = craftingButton.craftingPanel;
 			if (craftingPanel == true)
 			{
-				craftingPanel = craftingButton.craftingPanel;
 				for (int i = 0; i < crafting.slots.Length; i++)
 				{
 					if (crafting.isFull[i] == false)
