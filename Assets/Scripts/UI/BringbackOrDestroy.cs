@@ -18,6 +18,7 @@ public class BringbackOrDestroy : MonoBehaviour {
 
 	public void BbOrD()
 	{
+		transform.rotation *= Quaternion.Euler(0, 0, 180);
 		if (craftingPanel)
 		{
 			for (int i = 0; i < crafting.slots.Length; i++)
