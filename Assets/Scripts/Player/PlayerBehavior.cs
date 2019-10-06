@@ -35,38 +35,63 @@ public class PlayerBehavior : MonoBehaviour {
 		if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D))
 		{
 			this.GetComponent<SpriteRenderer>().sprite = characterSprite[0];
-			//playerAnim.SetBool("isSwimming", true);
+			//turn the trail sprite at x degree
+			playerAnim.SetBool("isSwimmingLR", false);
+			playerAnim.SetBool("isSwimmingFB", true);
+
 		}
 		else if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A))
 		{
 			this.GetComponent<SpriteRenderer>().sprite = characterSprite[0];
+			//turn the trail sprite at x degree
+			playerAnim.SetBool("isSwimmingLR", false);
+			playerAnim.SetBool("isSwimmingFB", true);
 		}
 		else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A))
 		{
 			this.GetComponent<SpriteRenderer>().sprite = characterSprite[1];
+			//turn the trail sprite at x degree
+			playerAnim.SetBool("isSwimmingLR", false);
+			playerAnim.SetBool("isSwimmingFB", true);
 		}
 		else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D))
 		{
 			this.GetComponent<SpriteRenderer>().sprite = characterSprite[1];
+			//turn the trail sprite at x degree
+			playerAnim.SetBool("isSwimmingLR", false);
+			playerAnim.SetBool("isSwimmingFB", true);
 		}
 		else if (Input.GetKey(KeyCode.W))
 		{
 			this.GetComponent<SpriteRenderer>().sprite = characterSprite[0];
+			//turn the trail sprite at x degree
+			playerAnim.SetBool("isSwimmingLR", false);
+			playerAnim.SetBool("isSwimmingFB", true);
 		}
 		else if (Input.GetKey(KeyCode.A))
 		{
 			this.GetComponent<SpriteRenderer>().sprite = characterSprite[2];
+			//turn the trail sprite at x degree
+			playerAnim.SetBool("isSwimmingFB", false);
+			playerAnim.SetBool("isSwimmingLR", true);
 		}
 		else if (Input.GetKey(KeyCode.S))
 		{
 			this.GetComponent<SpriteRenderer>().sprite = characterSprite[1];
+			//turn the trail sprite at x degree
+			playerAnim.SetBool("isSwimmingLR", false);
+			playerAnim.SetBool("isSwimmingFB", true);
 		}
 		else if (Input.GetKey(KeyCode.D))
 		{
 			this.GetComponent<SpriteRenderer>().sprite = characterSprite[3];
+			//turn the trail sprite at x degree
+			playerAnim.SetBool("isSwimmingFB", false);
+			playerAnim.SetBool("isSwimmingLR", true);
 		}
 		else {
-			//playerAnim.SetBool("isSwimming", false);
+			playerAnim.SetBool("isSwimmingFB", false);
+			playerAnim.SetBool("isSwimmingLR", false);
 		}
 	}
 }
