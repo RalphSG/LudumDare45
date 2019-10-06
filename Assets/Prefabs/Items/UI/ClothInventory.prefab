@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 222203403203889784}
   - component: {fileID: 114792986871728314}
   - component: {fileID: 114940965119887152}
+  - component: {fileID: 114522953866376914}
   m_Layer: 5
   m_Name: ClothInventory
   m_TagString: Untagged
@@ -29,6 +30,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114522953866376914
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1339001924842084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de7dc223873ed4a94701228e0ccf7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114792986871728314
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -68,7 +80,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -94,7 +106,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114792986871728314}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114522953866376914}
+        m_MethodName: ChangingSlots
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!222 &222203403203889784

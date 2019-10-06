@@ -25,6 +25,11 @@ TagManager:
   - Parrot
   - Message
   - NearPerimeter
+  - EmptyBottle
+  - CraftingSlot
+  - Slot
+  - CraftingPanel
+  - CraftingButton
   layers:
   - Default
   - TransparentFX
