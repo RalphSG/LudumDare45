@@ -9,31 +9,31 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1926220295466362}
+  m_RootGameObject: {fileID: 1709308521335700}
   m_IsPrefabAsset: 1
---- !u!1 &1926220295466362
+--- !u!1 &1709308521335700
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 224545119495786128}
-  - component: {fileID: 222354987436376766}
-  - component: {fileID: 114078340111918834}
+  - component: {fileID: 224849990136735266}
+  - component: {fileID: 222483239753895492}
+  - component: {fileID: 114154406647754184}
   m_Layer: 5
-  m_Name: Previsu_Hat
+  m_Name: Previsu_HatPermeable
   m_TagString: Previsu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &114078340111918834
+--- !u!114 &114154406647754184
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1926220295466362}
+  m_GameObject: {fileID: 1709308521335700}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -47,7 +47,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 486e8b3e9b600c940bb1cecb0d9079d4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 27c824d0daa20e745ae9ce43005c606f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -55,19 +55,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!222 &222354987436376766
+--- !u!222 &222483239753895492
 CanvasRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1926220295466362}
+  m_GameObject: {fileID: 1709308521335700}
   m_CullTransparentMesh: 0
---- !u!224 &224545119495786128
+--- !u!224 &224849990136735266
 RectTransform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1926220295466362}
+  m_GameObject: {fileID: 1709308521335700}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
