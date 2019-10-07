@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 222859428828062374}
   - component: {fileID: 114445792863115246}
   - component: {fileID: 114528133382374488}
+  - component: {fileID: 114423469463278776}
   m_Layer: 5
   m_Name: CanOfFoodInventory
   m_TagString: Food
@@ -29,6 +30,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114423469463278776
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1722918693990236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbc5e558f77ce3143833bf368f723b4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114445792863115246
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -94,7 +106,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114445792863115246}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114423469463278776}
+        m_MethodName: ConsumeFood
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!222 &222859428828062374

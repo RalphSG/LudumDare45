@@ -22,13 +22,25 @@ GameObject:
   - component: {fileID: 222635569682868862}
   - component: {fileID: 114629219253911902}
   - component: {fileID: 114486667681860584}
+  - component: {fileID: 114444957448131562}
   m_Layer: 5
-  m_Name: CanteenInventory
+  m_Name: BottleInventory
   m_TagString: Bottle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114444957448131562
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1345415632136578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c44b19e64c1e624ab8330dd546b31ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114486667681860584
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -67,7 +79,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114629219253911902}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114444957448131562}
+        m_MethodName: ConsumeDrink
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114629219253911902
