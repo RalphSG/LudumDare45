@@ -30,6 +30,7 @@ TagManager:
   - Slot
   - CraftingPanel
   - CraftingButton
+  - Previsu
   layers:
   - Default
   - TransparentFX

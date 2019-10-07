@@ -32,7 +32,6 @@ public class BringbackOrDestroy : MonoBehaviour {
 			}
 			for (int i = 0; i < inventory.slots.Length; i++)
 			{
-
 				//item can be added to inventory!
 				for (int y = 0; y < item.Length; y++)
 				{

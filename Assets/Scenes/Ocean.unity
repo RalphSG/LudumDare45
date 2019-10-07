@@ -8036,6 +8036,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1666583793}
     m_Modifications:
+    - target: {fileID: 114882235968711256, guid: 05094192cbd867b4082dd751784a59a2,
+        type: 2}
+      propertyPath: previsu.Array.size
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 224528094728162408, guid: 05094192cbd867b4082dd751784a59a2,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -8125,6 +8130,57 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882235968711256, guid: 05094192cbd867b4082dd751784a59a2,
+        type: 2}
+      propertyPath: previsu.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882235968711256, guid: 05094192cbd867b4082dd751784a59a2,
+        type: 2}
+      propertyPath: previsu.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882235968711256, guid: 05094192cbd867b4082dd751784a59a2,
+        type: 2}
+      propertyPath: previsu.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882235968711256, guid: 05094192cbd867b4082dd751784a59a2,
+        type: 2}
+      propertyPath: previsu.Array.data[3]
+      value: 
+      objectReference: {fileID: 224054666549531470, guid: e5df00d5e965d6341959474614c02cdf,
+        type: 2}
+    - target: {fileID: 114882235968711256, guid: 05094192cbd867b4082dd751784a59a2,
+        type: 2}
+      propertyPath: previsu.Array.data[4]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882235968711256, guid: 05094192cbd867b4082dd751784a59a2,
+        type: 2}
+      propertyPath: previsu.Array.data[5]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882235968711256, guid: 05094192cbd867b4082dd751784a59a2,
+        type: 2}
+      propertyPath: previsu.Array.data[6]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882235968711256, guid: 05094192cbd867b4082dd751784a59a2,
+        type: 2}
+      propertyPath: previsu.Array.data[7]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882235968711256, guid: 05094192cbd867b4082dd751784a59a2,
+        type: 2}
+      propertyPath: previsu.Array.data[8]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882235968711256, guid: 05094192cbd867b4082dd751784a59a2,
+        type: 2}
+      propertyPath: previsu.Array.data[9]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05094192cbd867b4082dd751784a59a2, type: 2}
