@@ -1,17 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerBehavior : MonoBehaviour {
+
+	//stats
+	public float health;
+	public float hunger;
+	public float thirst;
+	public float hungerSpeed = 0.1f;
+	public float thirstSpeed = 0.1f;
+
+	//UI control
+	public Slider healthBar;
+	public Slider hungerBar;
+	public Slider thirstBar;
 
 	//Variables for movement
 	float direction = 0;
 	public float maxSpeed = 5f;
-
-	//Variables for health management
-	public float hunger = 0f;
-	public float thirst = 0f;
-	public float temperature = 0f;
 
 	public Sprite[] characterSprite;
 
@@ -32,6 +40,7 @@ public class PlayerBehavior : MonoBehaviour {
 	// Update is called once per frame
 	void Update()
 	{
+
 		if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.D))
 		{
 			this.GetComponent<SpriteRenderer>().sprite = characterSprite[0];
@@ -39,6 +48,8 @@ public class PlayerBehavior : MonoBehaviour {
 			playerAnim.SetBool("isSwimmingLR", false);
 			playerAnim.SetBool("isSwimmingFB", true);
 
+			hungerSpeed = 0.2f;
+			thirstSpeed = 0.2f;
 		}
 		else if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.A))
 		{
@@ -46,6 +57,9 @@ public class PlayerBehavior : MonoBehaviour {
 			//turn the trail sprite at x degree
 			playerAnim.SetBool("isSwimmingLR", false);
 			playerAnim.SetBool("isSwimmingFB", true);
+
+			hungerSpeed = 0.2f;
+			thirstSpeed = 0.2f;
 		}
 		else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.A))
 		{
@@ -53,6 +67,9 @@ public class PlayerBehavior : MonoBehaviour {
 			//turn the trail sprite at x degree
 			playerAnim.SetBool("isSwimmingLR", false);
 			playerAnim.SetBool("isSwimmingFB", true);
+
+			hungerSpeed = 0.2f;
+			thirstSpeed = 0.2f;
 		}
 		else if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D))
 		{
@@ -60,6 +77,9 @@ public class PlayerBehavior : MonoBehaviour {
 			//turn the trail sprite at x degree
 			playerAnim.SetBool("isSwimmingLR", false);
 			playerAnim.SetBool("isSwimmingFB", true);
+
+			hungerSpeed = 0.2f;
+			thirstSpeed = 0.2f;
 		}
 		else if (Input.GetKey(KeyCode.W))
 		{
@@ -67,6 +87,9 @@ public class PlayerBehavior : MonoBehaviour {
 			//turn the trail sprite at x degree
 			playerAnim.SetBool("isSwimmingLR", false);
 			playerAnim.SetBool("isSwimmingFB", true);
+
+			hungerSpeed = 0.2f;
+			thirstSpeed = 0.2f;
 		}
 		else if (Input.GetKey(KeyCode.A))
 		{
@@ -74,6 +97,9 @@ public class PlayerBehavior : MonoBehaviour {
 			//turn the trail sprite at x degree
 			playerAnim.SetBool("isSwimmingFB", false);
 			playerAnim.SetBool("isSwimmingLR", true);
+
+			hungerSpeed = 0.2f;
+			thirstSpeed = 0.2f;
 		}
 		else if (Input.GetKey(KeyCode.S))
 		{
@@ -81,6 +107,9 @@ public class PlayerBehavior : MonoBehaviour {
 			//turn the trail sprite at x degree
 			playerAnim.SetBool("isSwimmingLR", false);
 			playerAnim.SetBool("isSwimmingFB", true);
+
+			hungerSpeed = 0.2f;
+			thirstSpeed = 0.2f;
 		}
 		else if (Input.GetKey(KeyCode.D))
 		{
@@ -88,10 +117,43 @@ public class PlayerBehavior : MonoBehaviour {
 			//turn the trail sprite at x degree
 			playerAnim.SetBool("isSwimmingFB", false);
 			playerAnim.SetBool("isSwimmingLR", true);
+
+			hungerSpeed = 0.2f;
+			thirstSpeed = 0.2f;
 		}
 		else {
 			playerAnim.SetBool("isSwimmingFB", false);
 			playerAnim.SetBool("isSwimmingLR", false);
+
+			hungerSpeed = 0.2f;
+			thirstSpeed = 0.2f;
 		}
+
+		//Update stats and UI values
+		if (hunger <= 0)
+		{
+			hunger = 0;
+		}
+		else {
+			hunger -= Time.deltaTime * hungerSpeed;
+		}
+		if (thirst <= 0)
+		{
+			thirst = 0;
+		}
+		else {
+			thirst -= Time.deltaTime * thirstSpeed;
+		}
+		if (hunger == 0 || thirst == 0)
+		{
+			health -= Time.deltaTime * 0.5f;
+		}
+
+		healthBar.value = health;
+		hungerBar.value = hunger;
+		thirstBar.value = thirst;
+
+		hungerSpeed = 0.1f;
+		thirstSpeed = 0.1f;
 	}
 }

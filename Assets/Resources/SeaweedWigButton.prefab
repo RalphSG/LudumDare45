@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114445541441149946}
   - component: {fileID: 114455235459137320}
   m_Layer: 5
-  m_Name: PonchoButton
+  m_Name: SeaweedWigButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
