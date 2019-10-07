@@ -18,6 +18,7 @@ public class PlayerBehavior : MonoBehaviour {
 	public Slider healthBar;
 	public Slider hungerBar;
 	public Slider thirstBar;
+	public GameObject deathPanel;
 
 	//Variables for movement
 	float direction = 0;
@@ -202,5 +203,9 @@ public class PlayerBehavior : MonoBehaviour {
 		hungerSpeed = 0.1f;
 		thirstSpeed = 0.1f;
 
+		if (health <= 0)
+		{
+			deathPanel.SetActive(true);
+		}
 	}
 }
