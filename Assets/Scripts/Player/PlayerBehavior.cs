@@ -11,6 +11,8 @@ public class PlayerBehavior : MonoBehaviour {
 	public float thirst;
 	public float hungerSpeed = 0.1f;
 	public float thirstSpeed = 0.1f;
+	public int headProtec;
+	public int bodyProtec;
 
 	//UI control
 	public Slider healthBar;
@@ -20,6 +22,7 @@ public class PlayerBehavior : MonoBehaviour {
 	//Variables for movement
 	float direction = 0;
 	public float maxSpeed = 5f;
+	public bool onRaft;
 
 	public Sprite[] characterSprite;
 
@@ -35,6 +38,9 @@ public class PlayerBehavior : MonoBehaviour {
 		playerAnim = GetComponent<Animator>();
 		manager = GameObject.FindObjectOfType<GameManager>();
 		manager.speed = maxSpeed;
+		healthBar.value = health;
+		hungerBar.value = hunger;
+		thirstBar.value = thirst;
 	}
 
 	// Update is called once per frame
