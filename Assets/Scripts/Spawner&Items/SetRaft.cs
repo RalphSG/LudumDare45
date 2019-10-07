@@ -9,6 +9,7 @@ public class SetRaft : MonoBehaviour {
 	public void goOnRaft() {
 	player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBehavior>();
 		player.onRaft = true;
+		player.maxSpeed = 2f;
 		Destroy(gameObject);
 	}
 

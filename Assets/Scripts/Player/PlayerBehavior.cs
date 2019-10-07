@@ -21,7 +21,7 @@ public class PlayerBehavior : MonoBehaviour {
 
 	//Variables for movement
 	float direction = 0;
-	public float maxSpeed = 5f;
+	public float maxSpeed;
 	public bool onRaft;
 
 	public Sprite[] characterSprite;
@@ -37,7 +37,7 @@ public class PlayerBehavior : MonoBehaviour {
 	{
 		playerAnim = GetComponent<Animator>();
 		manager = GameObject.FindObjectOfType<GameManager>();
-		manager.speed = maxSpeed;
+		maxSpeed = 1f;
 		healthBar.value = health;
 		hungerBar.value = hunger;
 		thirstBar.value = thirst;
